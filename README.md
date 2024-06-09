@@ -1,6 +1,6 @@
-<div align="center">
-<h1> WorkflowGPT 
-<br> A Starting Point for Custom Browser Automation Agents Adapted from WebVoyager </h1>
+<div align="left">
+<h1> WorkflowGPT </h1>
+<h3>A Starting Point for Custom Browser Automation Agents Adapted from WebVoyager</h3>
 </div>
 
 ## Introduction
@@ -64,4 +64,3 @@ Web navigation:
   year={2024}
 }
 ```
-# WorkflowGPT

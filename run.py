@@ -57,8 +57,7 @@ def driver_config(args):
 
 def format_msg(it, init_msg, pdf_obs, warn_obs, web_img_b64, web_text):
     if it == 1:
-        init_msg += f"I've provided the tag name of each element and the text it contains (if text exists). Note that <textarea> or <input> may be textbox, but not exactly. Please focus more on the screenshot and then refer to the textual information.\n{
-            web_text}"
+        init_msg += f"I've provided the tag name of each element and the text it contains (if text exists). Note that <textarea> or <input> may be textbox, but not exactly. Please focus more on the screenshot and then refer to the textual information.\n{web_text}"
         init_msg_format = {
             'role': 'user',
             'content': [
@@ -153,8 +152,7 @@ def exec_action_type(info, web_ele, driver_task):
     ele_type = web_ele.get_attribute("type")
     # outer_html = web_ele.get_attribute("outerHTML")
     if (ele_tag_name != 'input' and ele_tag_name != 'textarea') or (ele_tag_name == 'input' and ele_type not in ['text', 'search', 'password', 'email', 'tel']):
-        warn_obs = f"note: The web element you're trying to type may not be a textbox, and its tag name is <{
-            web_ele.tag_name}>, type is {ele_type}."
+        warn_obs = f"note: The web element you're trying to type may not be a textbox, and its tag name is <{web_ele.tag_name}>, type is {ele_type}."
     try:
         # Doesn't always work to delete
         web_ele.clear()
@@ -291,8 +289,7 @@ def main():
 
         messages = [{'role': 'system', 'content': SYSTEM_PROMPT}]
         obs_prompt = "Observation: please analyze the attached screenshot and give the Thought and Action. "
-        init_msg = f"""Now given a task: {
-            task['ques']}  Please interact with https://www.example.com and get the answer. \n"""
+        init_msg = f"""Now given a task: {task['ques']}  Please interact with https://www.example.com and get the answer. \n"""
         init_msg = init_msg.replace('https://www.example.com', task['web'])
         init_msg = init_msg + obs_prompt
 
@@ -423,7 +420,7 @@ def main():
 
                 elif action_key == 'scroll':
                     exec_action_scroll(
-                        info, web_eles, driver_task, args)
+                        info, web_eles, driver_task, args, None)
 
                 elif action_key == 'goback':
                     driver_task.back()

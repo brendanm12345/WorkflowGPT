@@ -1,5 +1,1 @@
-{"workflow_name": "Anthem", "id": "Anthem--1", "ques": "Scroll down to the search bar and search for ozempic and find the clinical criteria Eventually you should see the words `clinical criteria` with a link titled `more info` next to it.", "web": "https://client.formularynavigator.com/Search.aspx?siteCode=6878620461"}
-{"workflow_name": "Aetna", "id": "Aetna--1", "ques": "Find the coverage criteria for ozempic", "web": "https://www.aetna.com/health-care-professionals/clinical-policy-bulletins/pharmacy-clinical-policy-bulletins/pharmacy-clinical-policy-bulletins-search-results.html?query=%20&offset=0&YearSelect=2024&years=2023-2024"}
-{"workflow_name": "Cigna", "id": "Cigna--1", "ques": "Search for Cigna ozempic coverage criteria", "web": "https://www.google.com"}
-{"workflow_name": "UnitedHealthcare", "id": "UnitedHealthcare--1", "ques": "Search for UnitedHealthcare ozempic coverage criteria", "web": "https://www.google.com"}
-{"workflow_name": "Kaiser Permanente", "id": "KaiserPermanente--1", "ques": "Search for Kaiser Permanente ozempic coverage criteria", "web": "https://www.google.com"}
+{"web_name": "Google Search", "id": "Google Search--3", "ques": "Return the link to the dune 2 trailer", "web": "https://www.google.com/"}
